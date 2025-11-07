@@ -6,10 +6,11 @@ public class MyServer {
         try {
             Adder stub = new AdderRemote();
             LocateRegistry.createRegistry(3000); 
-            Naming.rebind("rmi://localhost:3000/vinay", stub);
+            Naming.rebind("rmi://localhost:3000/shraddha", stub);
             System.out.println("Server ready...");
         } catch(Exception e) {
             e.printStackTrace();
         }
     }
 }
+
